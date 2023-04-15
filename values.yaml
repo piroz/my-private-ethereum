@@ -1,0 +1,10 @@
+replicaCount: 1
+image:
+  repository: my-private-ethereum
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 8545
+ingress:
+  enabled: false
+resources: {}
